@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+
+    <link href="icon/icon/all.min.css" rel="stylesheet">
+
+    <title>今日は何を食べますか？</title>
+</head>
+<body>
+
+  <script src="./food.js"> </script>
+
+
+    <section class="landing">
+        <div class="dark-overlay">
+            <div class="landing-inner">
+              
+              <div class="p-1">
+                <h1 class="large">今日は</h1>
+                <h1 class="midle-text">"何"</h1>
+                <h1 class="large">を食べようか</h1>
+              </div>
+                
+                <div class="p-1">
+                  <p class="lead">今日はどうでした？</p>
+                  <form class="radio-tile-group" name="form1" id="form1">
+                    <div class="input-container">
+                      <input id="happy" class="radio-button" type="radio" name="feeling" value="0" onclick="DisplayPrice(this.value);"/>
+                      <div class="radio-tile">
+                        <label for="happy" class="radio-tile-label">
+                          <i class="far fa-grin"></i>
+                          <br>
+                            幸せ
+                        </label>
+                      </div>
+                    </div>
+                
+
+                    <div class="input-container">
+                      <input id="normal" class="radio-button" type="radio" name="feeling" value="1" onclick="DisplayPrice(this.value);"/>
+                      <div class="radio-tile">
+                        <label for="normal" class="radio-tile-label">
+                            <i class="far fa-smile"></i>
+                            <br>
+                            普通
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="input-container">
+                      <input id="trid" class="radio-button" type="radio" name="feeling" value="2" onclick="DisplayPrice(this.value);"/>
+                      <div class="radio-tile">
+                        <label for="trid" class="radio-tile-label">
+                          <i class="far fa-frown-open"></i>
+                          <br>
+                            疲労
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="input-container">
+                      <input id="angry" class="radio-button" type="radio" name="feeling" value="3" onclick="DisplayPrice(this.value);"/>
+                      <div class="radio-tile">
+                        <label for="angry" class="radio-tile-label">
+                          <i class="far fa-angry"></i>
+                          <br>
+                            怒り
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="input-container">
+                      <input id="sad" class="radio-button" type="radio" name="feeling" value="4" onclick="DisplayPrice(this.value);"/>
+                      <div class="radio-tile">
+                        <label for="sad" class="radio-tile-label">
+                          <i class="far fa-sad-tear"></i>
+                          <br>
+                            憂鬱
+                        </label>
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+             
+
+                <div class="p-1">
+                    <p class="lead">どんな味が食べたいですか？</p>
+                    <form class="radio-tile-group" name="form2" id="form2">
+                      <div class="input-container">
+                        <input id="hot" class="radio-button" type="radio" name="flavor" value="1" onclick="DisplayPrice(this.value);"/>
+                        <div class="radio-tile">
+                          <label for="hot" class="radio-tile-label">
+                              <i class="fas fa-burn"></i>
+                              <br>
+                              辛い
+                          </label>
+                        </div>
+                      </div>
+                  
+
+                      <div class="input-container">
+                        <input id="cold" class="radio-button" type="radio" name="flavor" value="6" onclick="DisplayPrice(this.value);"/>
+                        <div class="radio-tile">
+                          <label for="cold" class="radio-tile-label">
+                            <i class="fas fa-fish"></i>
+                              <br>
+                              塩気
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="input-container">
+                        <input id="seed" class="radio-button" type="radio" name="flavor" value="11" onclick="DisplayPrice(this.value);"/>
+                        <div class="radio-tile">
+                          <label for="seed" class="radio-tile-label">
+                            <i class="fas fa-cookie-bite"></i>
+                              <br>
+                              甘さ
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="input-container">
+                        <input id="heard" class="radio-button" type="radio" name="flavor" value="16" onclick="DisplayPrice(this.value);"/>
+                        <div class="radio-tile">
+                          <label for="heard" class="radio-tile-label">
+                             <i class="fas fa-egg"></i>
+                              <br>
+                              淡白
+                          </label>
+                        </div>
+                      </div>
+
+                    </form>
+                  </div>
+
+                <div class="button p-1">
+                    <a class="btn btn-primary" onclick="radio_chk();" href="selectfood.html">今日はこれだ</a>
+                </div>
+                
+                <form method="GET" name="valueform" action="selectfood.html">
+                  <input type="text" name="totalSum" id="totalSum" value="" size="3" readonly="readonly">
+                </form>
+                
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

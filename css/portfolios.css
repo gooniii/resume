@@ -1,0 +1,160 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import 'style.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 1.5rem;
+    background: #5f6163;
+}
+
+    /* portfolio */
+
+
+#portfolio .portfolio{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio .portfolio::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #5f6163, transparent);
+    z-index: 3;
+}
+
+#portfolio .portfolio::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #5f6163;
+    z-index: 999;
+    mix-blend-mode: color;
+}
+
+#portfolio .portfolio img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#text{
+    position: relative;
+    color: #000;
+    font-size: 8em;
+    z-index: 1;
+}
+
+#man {
+    z-index: 2;
+}
+    /*portfolios*/
+#portfolios {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolios .portfolios{
+    position: relative;
+    width: 1120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+#portfolios .portfolios .card {
+    position: relative;
+    max-width: 300px;
+    height: 260px;
+    background: #fff;
+    margin: 5px 10px;
+    padding: -5px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 50px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+
+#portfolios .portfolios .card:hover{
+    height: 300px;
+    border-radius: 4px;
+}
+
+#portfolios .portfolios .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 225px;
+    top: -5px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+#portfolios .portfolios .card .imgBx img{
+    width: 260px;
+    height: 271px;
+    border-radius: 4px;
+}
+
+#portfolios .portfolios .card .content {
+    position: relative;
+    margin-top: -28px;
+    padding: 58px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+#portfolios .portfolios .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -20px;
+    transition-delay: 0.3s;
+}
+
+    /* End portfolios */
+
+@media only screen and (max-width:1280px) {
+    #portfolio .portfolio h2{
+        margin-top: -100px;
+        text-align: center;
+        font-size: 9rem;
+    }
+    
+    #portfolios .portfolios {
+        flex-wrap: wrap;
+        width: auto;
+        border: 0px;
+    }
+
+    #portfolios .portfolios .card {
+        margin: 20px;
+    }
+
+
+} 
+
