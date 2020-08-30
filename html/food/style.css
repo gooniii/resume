@@ -244,10 +244,14 @@
     background: #d3d3d3;
   }
 
-  .midle-footer-text{
-    font-size: 3rem;
+  .midle-footer-text-lage{
+    font-size: 2rem;
     line-height: 1.2;
     color: #dbb741;
+  }
+
+  .midle-footer-text{
+    font-size: 1.25rem;
   }
 
   #overlay{
@@ -290,5 +294,26 @@
     .btn.btn-primary {
       background-color: #dbb741;
       color: #fff;
+    }
+
+    .modal-img img{
+      height: 300px;
+      width: 350px;
+      object-fit: cover;
+    }
+
+    .modal-header h1{
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .midle-footer-text-lage{
+      font-size: 1.5rem;
+      line-height: 1.2;
+      color: #dbb741;
+    }
+
+    .midle-footer-text{
+      font-size: 1rem;
     }
   }
