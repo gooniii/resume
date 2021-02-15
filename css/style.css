@@ -394,6 +394,18 @@ p{
     background-position: center;
 }
 
+#skill .skill-item:nth-child(5) {
+    background-image: url(../img/skills/php.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#skill .skill-item:nth-child(6) {
+    background-image: url(../img/skills/html.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 /* End skill section */
 
 
@@ -543,6 +555,7 @@ p{
 /* End About section */
 
 /* contact section */
+
 #contact .contact {
     flex-direction: column;
     max-width: 1200px;
@@ -793,6 +806,10 @@ p{
 
     /* Contact */
 
+    #contact {
+        margin-top: -200px;
+    }
+
     #contact .contact{
         flex-direction: column;
         padding: 100px 0;
@@ -838,6 +855,10 @@ p{
 /* Media Query For Dasktop */
 
 @media only screen and (min-width: 1200px) {
+
+    #contact {
+        margin-top: -200px;
+    }
 
     #resume h1{
         font-size: 5rem;
